@@ -1,0 +1,26 @@
+default: &default
+  adapter: postgresql
+  database: music_database_development
+  pool: 5
+  timeout: 5000
+  username: valentinwurfl
+  password: root
+
+test:
+  adapter: postgresql
+  database: music_database_test
+  pool: 5
+  timeout: 5000
+  username: valentinwurfl
+  password: root
+
+production:
+  adapter: postgresql
+  database: music_database_production
+  pool: 5
+  timeout: 5000
+  username: valentinwurfl
+  password: root
+
+development:
+  <<: *default
